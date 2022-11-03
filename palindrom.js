@@ -1,6 +1,10 @@
 let str = "madam";
 let bag = "";
-for (let i = 0; i < str.length; i++) {
+for (let i = str.length - 1; i >= 0; i--) {
   bag += str[i];
 }
-console.log(bag);
+if (bag === str) {
+  console.log("Palindrome");
+} else {
+  console.log("Not a Palindrome");
+}
